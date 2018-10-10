@@ -2,7 +2,8 @@
 
 ## Project Description:
 
-## Project Requirements:
+The basis of this assignment is to create an interactive application using 3D, and still images. Design and develop an engaging experience for the end user with which they can interact in a one-page mobile-first web application.
+This project will be a collaborative effort between all of your IDP classes.
 
 ## Getting Started
 
