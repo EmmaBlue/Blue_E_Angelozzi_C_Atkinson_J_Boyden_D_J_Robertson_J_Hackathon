@@ -1,1 +1,1 @@
-# Blue_E_Angelozzi_C_Atkinson_J_Boyden_D_J_Robertson_J_Hackathon
+# -Blue_E_Angelozzi_C_Atkinson_J_Boyden_D_J_Robertson_J_MIDTERM
