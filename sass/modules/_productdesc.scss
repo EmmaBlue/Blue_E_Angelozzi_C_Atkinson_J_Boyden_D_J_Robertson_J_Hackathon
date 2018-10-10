@@ -1,8 +1,11 @@
-#productDesc p  {
+#productDesc p {
+  text-align: center;
+  padding: 3em;
+  font-size: 1.5rem;
+  line-height: 2.5em;
 
-    text-align: center;
-    padding: 3em;
-    font-size: 2.5em; 
-    line-height: 2.5em;
-    
+  @media screen and (min-width: 1200px) {
+    font-size: 2.5rem;
+    ;
+  }
 }

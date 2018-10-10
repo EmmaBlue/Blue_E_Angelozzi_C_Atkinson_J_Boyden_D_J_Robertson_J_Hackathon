@@ -7,6 +7,12 @@
   const productTitle = document.querySelector('#title');
   const productTagline = document.querySelector('.hero-tagline');
 
+  var lightbox = new pureJSLightBox({
+    overlay: true,
+    navigation: false,
+    swipe: false
+  });
+
   // toogle for nav hanburger menu
   let toogle = document.querySelector(".navigation__checkbox");
   toogle.checked = false;
