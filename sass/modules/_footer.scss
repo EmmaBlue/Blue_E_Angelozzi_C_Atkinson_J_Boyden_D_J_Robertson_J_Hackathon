@@ -1,0 +1,39 @@
+#footer {
+  padding-bottom: 3rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  #footerLogo {
+    width: 19rem;
+    margin-bottom: 1.6rem;
+  }
+}
+
+.footer__navigation {
+  border-top: 1px solid #8e8e8e;
+  padding-top: 2rem;
+  display: inline-block;
+  &-list {
+    list-style: none;
+  }
+  &-item {
+    display: inline-block;
+    a {
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        font-weight: bolder;
+        color: $product_color_two;
+      } // desktop size media queries at 1200px
+      @media screen and (min-width: 1200px) {
+        font-size: 2rem;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 1.5rem; // desktop size media queries at 1200px
+      @media screen and (min-width: 1200px) {
+        margin-right: 3rem;
+      }
+    }
+  }
+}
