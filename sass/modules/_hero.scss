@@ -49,7 +49,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
-    text-transform: uppercase; // mobile LANDSCAPE media queries
+   
+    // mobile LANDSCAPE media queries
     @media screen and (min-device-width: 320px) and (orientation: landscape) {
       top: 65%;
     } // tablet size media queries at 700px
