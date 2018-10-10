@@ -6,11 +6,11 @@ class Product {
     // Note: update table names, column names in here
     public $product_table                          = 'tbl_product';
 
-    public $product_table_primary_key              = 'ID';
+    public $product_table_primary_key              = 'product_id';
 
-    public $color_table                            = 'tbl_color';
+    public $color_table                            = 'tbl_colors';
 
-    public $color_table_primary_key                = 'ID';
+    public $color_table_primary_key                = 'color_id';
 
     public $linking_table                          = 'tbl_product_color';
 
