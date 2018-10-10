@@ -27,7 +27,7 @@
     position: fixed;
     top: 2.5rem;
     left: 2.5rem;
-    background-image: radial-gradient($product_color_one, $product_color_two);
+    background-color: #65c6d2;
     z-index: 1100;
     display: none; // tablet size media queries at 700px
     @media screen and (min-width: 700px) {
@@ -48,7 +48,7 @@
       height: 5.8vh;
     } // desktop size media queries at 1200px
     @media screen and (min-width: 1200px) {
-      height: 7.6vh;
+      height: 8.2vh;
     }
   }
   &__list {
