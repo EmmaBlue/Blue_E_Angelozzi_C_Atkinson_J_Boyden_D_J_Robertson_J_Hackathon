@@ -1,0 +1,12 @@
+html {
+  font-size: 62.5%;
+  /* 62.5% of 16px is 10px which is 1rem */
+  min-height: 100%;
+}
+
+body {
+  font-family: "Raleway", "Helvetica", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: $base_bg;
+}

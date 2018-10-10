@@ -1,0 +1,212 @@
+/* FLOATING NAVIGATION TOGGLE BUTTON */
+
+.navigation {
+  &__checkbox {
+    display: none;
+  }
+  &__button {
+    background-color: $color-white;
+    box-shadow: 1rem 0.4rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 80%;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 0.9rem;
+    left: 2rem;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer; // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
+  }
+  &__background {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+    background-image: radial-gradient($product_color_one, $product_color_two);
+    z-index: 1100;
+    display: none; // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      display: none !important;
+    }
+  }
+  &__nav {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    opacity: 0; // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.8);
+      height: 5.8vh;
+    } // desktop size media queries at 1200px
+    @media screen and (min-width: 1200px) {
+      height: 7.6vh;
+    }
+  }
+  &__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100%; // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      top: 3rem;
+      text-align: left;
+      width: 91%;
+    } // Tablet LANDSCAPE media queries
+    @media screen and (min-device-width: 700px) and (orientation: landscape) {
+      top: 3rem;
+    }
+  }
+  &__item {
+    margin: 1rem; // tablet size media queries at 700px
+    @media screen and (min-width: 700px) {
+      display: inline;
+      margin: -0.4rem;
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: 300;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 1rem 2rem; // tablet size media queries at 700px
+      @media screen and (min-width: 700px) {
+        font-size: 1.6rem;
+        margin-left: 3rem;
+        padding: 0;
+      }
+    }
+    &:hover,
+    &:active {
+      color: $product_color_two;
+      transform: scale(1.2); // tablet size media queries at 700px
+      @media screen and (min-width: 700px) {
+        color: $product_color_two;
+        transform: scale(1);
+      }
+    }
+  } // FUNCTIONALITY
+  &__checkbox:checked~&__background {
+    transform: scale(80);
+    display: block;
+  }
+  &__checkbox:checked~&__nav {
+    opacity: 1;
+    width: 100%;
+  } // ICON
+  &__icon {
+    position: relative;
+    margin-top: 2rem;
+    &,
+    &::before,
+    &::after {
+      width: 2em;
+      height: 2px;
+      background-color: $color-black;
+      display: inline-block;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.6rem;
+    }
+    &::after {
+      top: 0.6rem;
+    }
+  }
+  &__button:hover &__icon:before {
+    top: -1rem;
+  }
+  &__button:hover &__icon:after {
+    top: 1rem;
+  }
+  &__checkbox:checked+&__button &__icon {
+    background-color: transparent;
+  }
+  &__checkbox:checked+&__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &__checkbox:checked+&__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+/* FLOATING NAVIGATION TOGGLE end */
+
+/* HEADER Social Icons  */
+
+#social {
+  margin-top: 6rem; // mobile LANDSCAPE media queries
+  @media screen and (min-device-width: 320px) and (orientation: landscape) {
+    margin-top: 2rem;
+  } // tablet size media queries at 700px
+  @media screen and (min-width: 700px) {
+    position: absolute;
+    top: -64px;
+    right: 5px;
+  } // Tablet LANDSCAPE media queries
+  @media screen and (min-device-width: 700px) and (orientation: landscape) {
+    top: -2rem;
+  }
+}
+
+#social li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 2.4rem; // tablet size media queries at 700px
+  @media screen and (min-width: 700px) {
+    text-align: right;
+    font-size: 1.8rem;
+  }
+}
+
+#social li a {
+  color: $color-white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.fa-youtube:hover {
+  color: red;
+}
+
+.fa-twitter:hover {
+  color: deepskyblue;
+}
+
+.fa-instagram:hover {
+  color: rgb(236, 156, 8);
+}
+
+.fa-facebook-square:hover {
+  color: dodgerblue;
+}
+
+.fa-search:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+/* HEADER Social Icons  end */

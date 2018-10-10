@@ -1,0 +1,27 @@
+{
+  "name": "blue_e_angelozzi_c_atkinson_j_boyden_d_j_robertson_j_hackathon",
+  "version": "1.0.0",
+  "description": "Midterm IDP - Fanshawe College",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp watch & gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaBlue/Blue_E_Angelozzi_C_Atkinson_J_Boyden_D_J_Robertson_J_Hackathon.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EmmaBlue/Blue_E_Angelozzi_C_Atkinson_J_Boyden_D_J_Robertson_J_Hackathon/issues"
+  },
+  "homepage": "https://github.com/EmmaBlue/Blue_E_Angelozzi_C_Atkinson_J_Boyden_D_J_Robertson_J_Hackathon#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.0",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
