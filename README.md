@@ -1,4 +1,4 @@
-# Midterm Hackathon
+# ThermoSecure Thermostat Product Page
 
 ![](images/main_image.jpg)
 
