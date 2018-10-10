@@ -1,9 +1,10 @@
 # Midterm Hackathon
 
+![](images/main_image.jpg)
+
 ## Project Description:
 
 The basis of this assignment is to create an interactive application using 3D, and still images. Design and develop an engaging experience for the end user with which they can interact in a one-page mobile-first web application.
-This project will be a collaborative effort between all of your IDP classes.
 
 ## Getting Started
 
@@ -34,21 +35,9 @@ And you’re done!
 
 ## Built With:
 
-* [CSS Grid](https://cssreference.io/css-grid/)
-* [CSS Flexbox](https://cssreference.io/flexbox/)  
-* [Javascript](https://www.javascript.com/) - Used for custom video player
-
-## Progress
-
-- [x] Create WireFrames
-- [x] Create Gui for Thermo
-- [x] Create Thermo Model in C4D
-- [ ] Code HTML
-- [ ] Code CSS
-- [ ] Code JS
-- [ ] Implement Back-end elements
-- [ ] Clean Up Folders
-- [ ] Submit
+* [MySQL](https://www.mysql.com/)
+* [PHP](https://www.phpmyadmin.net/)
+* [Javascript](https://www.javascript.com/) 
 
 ## Authors
 * [**Camillo Angelozzi**](https://github.com/cangelozzi) - *Developer*
@@ -57,5 +46,6 @@ And you’re done!
 * [**Dan Boyden**](https://github.com/OfficialDboyden) - *Designer*
 * [**John Robertson**](https://github.com/tectone) - *Developer*
 
-## References
+## Inspiration
 
+* [Rob Hayes](https://www.robhayesstore.com/?ref=lapaninja) 
